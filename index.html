@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hungry Hamster 2048</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+        </style>
+        <!-- Preload images -->
+        <link rel="preload" href="img/2.png" as="image">
+        <link rel="preload" href="img/4.png" as="image">
+        <link rel="preload" href="img/8.png" as="image">
+        <link rel="preload" href="img/16.png" as="image">
+        <link rel="preload" href="img/32.png" as="image">
+        <link rel="preload" href="img/64.png" as="image">
+        <link rel="preload" href="img/128.png" as="image">
+        <link rel="preload" href="img/256.png" as="image">
+        <link rel="preload" href="img/512.gif" as="image">
+        <link rel="preload" href="img/1024.gif" as="image">
+        <link rel="preload" href="img/2048.gif" as="image">
+        <link rel="preload" href="img/4096.png" as="image">
+        <link rel="preload" href="img/8192.png" as="image">
+    </head>
+
+    <body>
+        <h1>Hungry Hamster 2048</h1>
+        <hr>
+        <div id="board">
+        </div>
+        <div class="score-container">
+            <div id = "div-score">Score: <span id="score">0</span></div>
+            <div id="div-high-score">High Score: <span id="high-score">0</div>
+        </div>
+
+        <div id="game-over">
+            Game Over!
+            <button id="restart-btn">Try again?</button>
+        </div>
+        <div id="win-screen">
+            <span>Congratulations!</span>
+            <span>You have reached the epitome of Hunger!</span>
+            <span>Or have you...?</span>
+            <button id="resume-btn">Keep going?</button>
+        </div>
+    </body>
+</html>
